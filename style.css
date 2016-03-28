@@ -283,7 +283,7 @@ header:after {
     display: block;
 }
 .city .select > ul li:hover {
-    background: url(img/checked.png) no-repeat 10px 10px,rgb(186,68,65);
+    background: url(img/checked.png) no-repeat 10px 10px rgb(186,68,65);
     color: rgb(255,255,255);
     transition: all .3s;
     -webkit-transition: all .3s;
@@ -291,18 +291,9 @@ header:after {
 }
 .activity {
     background-color: rgb(247,247,247);
-    padding: 110px 100px 90px 100px;
-    min-height: 530px;
-}
-@media (min-width: 1920px) {
-    .activity {
-        min-height: 730px;
-    }
-}
-@media (min-width: 2560px) {
-    .activity {
-        min-height: 930px;
-    }
+    padding: 110px 100px 0 100px;
+    min-height: 600px;
+
 }
 .activity .picture {
     display: inline-block;
@@ -312,7 +303,25 @@ header:after {
     padding: 0;
     transition: padding 0.2s ease-in-out;
     -webkit-transition: padding 0.2s ease-in-out;
+    min-height: 530px;
 }
+@media (min-width: 1920px) {
+    .activity {
+        min-height: 790px;
+    }
+    .activity .picture {
+        min-height: 690px;
+    }
+}
+@media (min-width: 2560px) {
+    .activity {
+        min-height: 990px;
+    }
+    .activity .picture {
+        min-height: 890px;
+    }
+}
+
 .activity .picture h3 {
     text-align: center;
     color: rgb(118,118,118);
@@ -366,6 +375,7 @@ header:after {
     height: 80%;
     display: block;
     margin: 20px auto 20px;
+    z-index: -1;
 }
 
 .new-world {
