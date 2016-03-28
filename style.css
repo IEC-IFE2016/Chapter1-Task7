@@ -62,11 +62,15 @@ header nav ul li:hover > a {
 header nav ul:hover > .active {
     border: none;
 }
-header nav ul .active:hover > .active{
+header nav ul .active:hover {
     border-bottom: 3px solid rgb(239,79,81);
 }
+
 header nav ul:hover > .active a {
     color: rgb(100,103,121);
+}
+header nav ul .active:hover > a {
+    color: rgb(239,79,81);
 }
 header nav ul li:last-child {
     padding-left: 50px;
